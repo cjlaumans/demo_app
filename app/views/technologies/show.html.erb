@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @technology.name %>
+</p>
+
+<p>
+  <b>Peak load:</b>
+  <%= @technology.peak_load %>
+</p>
+
+<p>
+  <b>Network:</b>
+  <%= @technology.network_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_technology_path(@technology) %> |
+<%= link_to 'Back', technologies_path %>
